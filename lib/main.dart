@@ -42,7 +42,17 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: const Center(
-        child: Text('FittedBox Widget'),
+        child: FittedBox(
+          child: Text(
+            'This is the FittedBox Widget in Flutter, This app is linked to the debug service',
+            maxLines: 1,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 25,
+              color: Colors.black,
+            ),
+          ),
+        ),
       ),
     );
   }
